@@ -1,5 +1,5 @@
 body{
-    background-image: url("images/pattern-background-desktop.svg");
+    background-image: url("images/pattern-background-mobile.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: hsl(225, 100%, 94%);
@@ -23,6 +23,7 @@ p{
     background-color: white;
     border-radius: 15px;
     box-shadow: 0px 15px 30px rgba(56, 41, 224, 0.15);
+    max-width: 310px;
 }
 .heading{
     padding: 2rem 0rem 0.25rem 0rem;
@@ -38,10 +39,10 @@ p{
     justify-content: center;
 }
 .info{
-    max-width: 300px;
+    max-width: 240px;
     text-align: center;
     margin: 0px;
-    padding: 1rem 0;
+    padding: 1.25rem 0;
     color: hsl(224, 23%, 55%);
     
   
@@ -57,7 +58,7 @@ p{
     flex-flow: row;
     justify-content: center;
     align-items: center;
-    max-width: 300px;
+    max-width: 250px;
     gap: 1rem;
     margin: auto;
     padding: 1rem 1rem;
@@ -102,7 +103,7 @@ padding: 1rem 0rem;
 margin: auto;
 background-color: hsl(245, 75%, 52%);
 color: white;
-width: 350px;
+width: 280px;
 height: 40px;
 border-radius: 10px;
 border: 0px;
@@ -132,4 +133,43 @@ box-shadow: 0px 5px 20px rgba(56, 41, 224, 0.4);
     cursor: pointer;
     background-color:rgba(56, 41, 224,0.7);
     transition: 0.3s;
+}
+
+.desktopImg{
+    display: none;
+}
+
+@media (min-width: 500px) 
+{
+    .card{
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0px 15px 30px rgba(56, 41, 224, 0.15);
+        max-width: none;
+    }
+
+    .mobileImg{
+        display: none;
+    }
+
+    .desktopImg{
+        display: inline;
+    }
+    .info, .plan{
+        max-width: 300px;
+  
+    }
+
+    .pay{
+        width: 340px;
+    }
+
+    body{
+        background-image: url("images/pattern-background-desktop.svg");
+    }
+    
 }
