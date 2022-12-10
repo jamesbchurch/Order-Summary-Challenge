@@ -3,11 +3,17 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-color: hsl(225, 100%, 94%);
+    
 }
 
 img{
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
+}
+
+p{
+    margin: 0px;
+    padding: 0px;
 }
 .card{
     transform: translate(-50%, -50%);
@@ -17,11 +23,22 @@ img{
     background-color: white;
     border-radius: 15px;
 }
-
-.info{
-    max-width: 200px;
+.heading{
     display: flex;
     justify-content: center;
+    
+}
+.infoContainer{
+    display: flex;
+    justify-content: center;
+}
+.info{
+    max-width: 300px;
+    text-align: center;
+    margin: 0px;
+    padding: 1rem 0;
+    
+  
 }
 .plan{
     list-style-type: none;
@@ -29,16 +46,35 @@ img{
     flex-flow: row;
     justify-content: center;
     align-items: center;
-    max-width: 200px;
+    max-width: 300px;
+    gap: 1rem;
+    margin: auto;
+    padding: 1rem 1rem;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+   
+}
+
+
+.planList{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.change{
+    margin-left: auto;
 }
 .options{
 display: flex;
 flex-flow: column;
 justify-content: center;
+gap: 2rem;
+padding: 1rem 0rem;
 }
 
 .pay{
-    margin: auto;
+margin: auto;
 background-color: hsl(245, 75%, 52%);
 color: white;
 width: 400px;
@@ -51,7 +87,16 @@ font-size: 14px
 
 }
 
-button:hover{
+.cancel{
+    border: 0px;
+    color: black;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    background-color: white;
+}
+
+.pay:hover{
     cursor: pointer;
     background-color:rgba(56, 41, 224,0.7);
     transition: 0.3s;
